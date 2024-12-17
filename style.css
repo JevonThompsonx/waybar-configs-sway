@@ -1,7 +1,7 @@
 
 /* General Styling */
 * {
-    font-family: "Fira Code", monospace; /* Modern monospace font */
+    font-family: "Fira Code Retina", monospace; /* Modern monospace font */
     font-size: 14px;
     color: #cdd6f4; /* Subtle off-white text */
     background: #1e1e2e; /* Soft dark background */
@@ -52,7 +52,6 @@
 #clock, #cpu, #memory, #battery {
     padding: 0 10px;
     border-radius: 4px;
-    background-color: #313244; /* Neutral background */
     color: #cdd6f4; /* Subtle off-white text */
 }
 
