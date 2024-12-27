@@ -1,83 +1,52 @@
 
-/* General Styling */
-* {
-    font-family: "Fira Code Retina", monospace; /* Modern monospace font */
+*{
+    font-family: FiraCodeRetina;
     font-size: 14px;
-    color: #cdd6f4; /* Subtle off-white text */
-    background: #1e1e2e; /* Soft dark background */
+    min-height: 0;
+    color: white;
 }
 
-/* Left Modules - Workspaces */
-#workspaces button {
-    padding: 6px 10px;
-    margin: 0 4px;
-    border-radius: 4px; /* Rounded edges */
-    font-weight: 500;
+window#waybar {
+    background-color: transparent;
 }
 
-#workspaces button.active {
-    background-color: #f38ba8; /* Coral pink for active workspace */
-    color: #1e1e2e; /* Contrasting dark text */
+#workspaces{
+    margin-top: 3px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    margin-left: 25px;
 }
 
-#workspaces button:hover {
-    background-color: #45475a; /* Highlight effect on hover */
-    color: #ffffff;
+#workspaces button{
+    border-radius: 15px;
+    margin-right: 10px;
+    padding: 1px 10px;
+    font-weight: bolder;
+    background-color: #181818;
 }
 
-/* Center Module - Active Window */
-#sway-window {
-    font-weight: bold;
-    padding: 0 12px;
-    background-color: #a6e3a1; /* Soft green background */
-    color: #1e1e2e; /* Contrasting dark text */
-    border-radius: 4px;
+#workspaces button.active, #workspaces button.focused{
+    padding: 0 15px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;    
+    background: #23a6d5;
 }
 
-#sway-window:hover {
-    background-color: #89dceb; /* Teal hover effect */
-    color: #1e1e2e;
-}
-
-/* Right Modules - System Tray and Info */
-#tray {
-    padding: 0 10px;
-    color: #f5c2e7; /* Soft pink icons */
-}
-
-#tray:hover {
-    color: #89dceb; /* Teal on hover */
-}
-
-#clock, #cpu, #memory, #battery {
-    padding: 0 10px;
-    border-radius: 4px;
-    color: #cdd6f4; /* Subtle off-white text */
-}
-
-#clock:hover, #cpu:hover, #memory:hover, #battery:hover {
-    background-color: #45475a; /* Highlight background on hover */
-    color: #f38ba8; /* Coral pink on hover */
-    transition: all 0.3s ease;
-}
-
-/* Tooltip Styling */
-.tooltip {
-    background-color: #45475a;
-    color: #ffffff;
-    font-size: 12px;
-    padding: 4px 8px;
-    border-radius: 4px;
-}
-
-/* Separator Styling (if any) */
-.separator {
-    color: #6c7086; /* Subtle separator color */
-    margin: 0 8px;
-}
-
-/* Transition Effects */
-.module, #tray, #clock, #cpu, #memory, #battery, #sway-window {
-    transition: all 0.2s ease;
+#tray,
+#mpd,
+#custom-weather,
+#cpu, 
+#temperature, 
+#memory,
+#sway-mode,
+#backlight, 
+#pulseaudio, 
+#custom-vpn,
+#disk,
+#custom-recorder,
+#custom-audiorec,
+#battery, 
+#clock, 
+#network {
+	padding: 0 10px;
 }
 

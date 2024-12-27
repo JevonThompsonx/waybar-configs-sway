@@ -25,7 +25,7 @@
         "format": "CPU: {usage}%"
     },
     "memory": {
-        "format": "RAM: {used}MB"
+        "format": "RAM: {used}GB"
     },
     "battery": {
         "format": "BAT: {capacity}%"
